@@ -1,0 +1,557 @@
+<!doctype html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+        <title>Stuart Wilson</title>
+
+        <style>
+         :root {
+    --sidebar-bg: #222;
+}
+/* BEGIN RESET CSS
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END RESET CSS */
+body {
+    background-image: linear-gradient(to right, var(--sidebar-bg) 45%, #eee 55%);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+}
+p {
+}
+section, div.item {
+    padding-top: 1em;
+    break-inside: avoid;
+}
+section#work, section#projects{
+    break-inside: auto;
+}
+#resume {
+    margin: 0 auto;
+    max-width: 8.5in;
+    display: flex;
+    padding: 20px 0;
+}
+#sidebar, #chronology {
+    padding: 0 1em;
+}
+#sidebar {
+    background-color: var(--sidebar-bg);
+    color: #fff;
+    font-size: 0.9em;
+}
+#sidebar a {
+    color: #fff;
+}
+#profiles li {
+    margin-bottom: 0.5em;
+}
+#profiles .network {
+    font-weight: bold;
+}
+#chronology {
+    background-color: #fff;
+    padding-left: 10px;
+}
+h1 {
+    font-size: 2.9em;
+    white-space: nowrap;
+}
+#pronouns {
+    font-style: italic;
+    margin-top: -0.5em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.2em;
+}
+img.headshot {
+    max-width: 100%;
+}
+.institution {
+    font-weight: bold;
+}
+.date {
+    font-style: italic;
+}
+#skills .name, #interests .name {
+    font-weight: bold;
+}
+#skills .level {
+    font-style: italic;
+}
+.keywords li {
+    display: inline-block;
+    border: #888 solid 1px;
+    padding: 0 2px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+#chronology .keywords li {
+    /* border-color: var(--sidebar-bg); */
+    font-size: 0.8em;
+}
+#languages .language {
+    font-weight: bold;
+}
+#languages .fluency {
+    font-style: italic;
+}
+#work .position {
+    font-weight: bold;
+}
+ul.highlights {
+    list-style: disc;
+}
+ul.highlights li {
+    margin-left: 1.5em;
+}
+
+        </style>
+        <script src="https://kit.fontawesome.com/0e272f671c.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="resume">
+            <div id="sidebar">
+                	<h1>Stuart Wilson</h1>
+                      <img class="headshot" src="images/profile.jpg" alt="photo of Stuart Wilson"/>
+                	<h2>Ruby on Rails Developer</h2>
+                	<section id="basics">
+                		<div class="contact">
+                		<div class="email">
+                			stuartwilson94@gmail.com
+                		</div>
+                		<div class="phone">
+                			(936) 537-2399
+                		</div>
+                		</div>
+                		<section id="location">
+                        11411 Lake Oak Dr<br/>
+                        Montgomery,
+                        Texas,
+                        TX 77356<br/>
+                        US
+                		</section>
+                		<section id="profiles">
+                      <ul>
+                        <li>
+                          <div class="network">
+                                  <i class="fa-brands fa-twitter"></i> Twitter
+                          </div>
+                          <div>
+                                  <a href="https://twitter.com/StuartW64954805">StuartW64954805</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="network">
+                                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                          </div>
+                          <div>
+                                  <a href="https://www.linkedin.com/in/stuart-wilson-72b61a10/">Stuart Wilson</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="network">
+                                  <i class="fa-solid fa-file"></i> Github
+                          </div>
+                          <div>
+                                  <a href="https://github.com/DebakeDSP94">DebakeDSP94</a>
+                          </div>
+                        </li>
+                      </ul>
+                		</section>
+                	</section>
+                <section id="education">
+                	<h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+                	<div class="item">
+                		<div class="institution">
+                			Stephen F. Austin State University
+                		</div>
+                		<div class="date">
+                			      <span class="startDate">
+                				        1992-09
+                			      </span>
+                			      <span class="endDate">
+                				        - 1999-06
+                			      </span>
+                		</div>
+                		    <div class="studyType">
+                			      Bachelor
+                		    </div>
+                		<div class="area">
+                			Environmental Science
+                		</div>
+                		<div class="gpa">
+                			GPA: 2.9
+                		</div>
+                		<ul class="courses">
+                			<li>Math minor</li>
+                			<li>Fortran, COBOl, BASIC, Pascal, C, C++, Assembly Language, Machine Language, Data Structures and Algorithms</li>
+                		</ul>
+                	</div>
+                </section>
+                <section id="skills">
+                	<h2><i class="fa-solid fa-hammer"></i> Skills</h2>
+                	<div class="item">
+                		<div class="name">
+                			Web Development
+                		</div>
+                		<div class="level">
+                			<em>Junior</em>
+                		</div>
+                		<ul class="keywords">
+                			<li>HTML</li>
+                			<li>CSS</li>
+                			<li>Javascript</li>
+                			<li>Ruby</li>
+                			<li>Ruby on Rails</li>
+                		</ul>
+                	</div>
+                </section>
+                <section id="languages">
+                	<h2><i class="fa-solid fa-language"></i> Languages</h2>
+                  <div class="item">
+                  <ul>
+                  <li>
+                		<div class="language">
+                			🇬🇧 English
+                		</div>
+                		<div class="fluency">
+                			<em>Native speaker</em>
+                		</div>
+                	</li>
+                  </ul>
+                  </div>
+                </section>
+                <section id="interests">
+                	<h2><i class="fa-solid fa-lightbulb"></i> Interests</h2>
+                	<div class="item">
+                		<div class="name">
+                			RC airplanes
+                		</div>
+                		<ul class="keywords">
+                			<li>Electrics</li>
+                			<li>Motor rewinding</li>
+                			<li>3-D Flying</li>
+                			<li>Scratch Building</li>
+                		</ul>
+                	</div>
+                </section>
+            </div>
+            <div id="chronology">
+                    <section id="summary">
+                        <h2><i class="fa-solid fa-paragraph"></i> Summary</h2>
+                        <div class="item">
+                			  <p>Stuart grew up in Indonesia with a few years in London and Sydney in between the 3 times he lived in Jakarta.  He attended Jakarta International School before going to Stephen F. Austin State University where he pursued a major in Computer Science prior to graduating with a Bachelors of Environmental Science with a Math minor. He has had a diverse work history in sales, customer service, and team leadership.  He has held licences and certifications in several fields. He attempted to start a business before deciding to make a return to computer scence and specialize in web development through The Odin Project.</p>
+                        </div>
+                    </section>
+                <section id="work">
+                	<h2><i class="fa-solid fa-briefcase"></i> Work</h2>
+                	<div class="item">
+                		<h3 class="name">
+                			Chair Weasel LLC
+                		</h3>
+                		<div class="date">
+                			<span class="startDate">
+                				2018-03
+                			</span>
+                			<span class="endDate">
+                				- 2022-12
+                			</span>
+                		</div>
+                		<div class="position">
+                			CEO/President
+                		</div>
+                		<div class="summary">
+                			<p>Chair weasel is a small business developing a product to make it easier to transport your camping chair to sports events and other venues.</p>
+                		</div>
+                		<ul class="highlights">
+                			<li>Self taught CAD and 3D-printing.</li>
+                			<li>Research all aspects of product development.</li>
+                			<li>Wrote a provisional patent for designed product.</li>
+                			<li>Designed functionally optimized product over many iterations using printed parts and parts from prototyping services.</li>
+                		</ul>
+                	</div>
+                	<div class="item">
+                		<h3 class="name">
+                			Longbridge Financial, LLC
+                		</h3>
+                		<div class="date">
+                			<span class="startDate">
+                				2016-10
+                			</span>
+                			<span class="endDate">
+                				- 2018-03
+                			</span>
+                		</div>
+                		<div class="position">
+                			Loan Officer
+                		</div>
+                		<div class="summary">
+                			<p>Handle all aspects of loan origination from initial contact of the customer through to the closing.</p>
+                		</div>
+                		<ul class="highlights">
+                			<li>Worked on special teams due to high performance despite being newest member of the company.</li>
+                			<li>3rd highest in originations in first year.</li>
+                			<li>Excellent grasp of underwriting guidelines and procedures.</li>
+                		</ul>
+                	</div>
+                	<div class="item">
+                		<h3 class="name">
+                			Uretek ICR Gulf Coast
+                		</h3>
+                		<div class="date">
+                			<span class="startDate">
+                				2013-09
+                			</span>
+                			<span class="endDate">
+                				- 2016-10
+                			</span>
+                		</div>
+                		<div class="position">
+                			Sales Representative
+                		</div>
+                		<div class="summary">
+                			<p>Go on four sales appointments per day, take measurements, provide a proposal for repairs.</p>
+                		</div>
+                		<ul class="highlights">
+                			<li>Create proposals for repairs in residential structures.</li>
+                			<li>Meet with facility management and create proposal for repairs in commercial and industrial setting.</li>
+                			<li>Networked with engineers and municipal infrastructure managers.</li>
+                		</ul>
+                	</div>
+                	<div class="item">
+                		<h3 class="name">
+                			Complience Resources Inc
+                		</h3>
+                		<div class="date">
+                			<span class="startDate">
+                				2006-04
+                			</span>
+                			<span class="endDate">
+                				- 2013-06
+                			</span>
+                		</div>
+                		<div class="position">
+                			Team Leader
+                		</div>
+                		<div class="summary">
+                			<p>Lead team of 6 inspectors, and performed field environmental inspections and audits.</p>
+                		</div>
+                		<ul class="highlights">
+                			<li>CESSWI certified.</li>
+                			<li>Conduct weekly site inspections of construction sites.</li>
+                			<li>Assist manager in yearly budget and operations plans.</li>
+                			<li>Perform regular reviews of team members and QC.</li>
+                			<li>Train new team members and provide orientation.</li>
+                		</ul>
+                	</div>
+                	<div class="item">
+                		<h3 class="name">
+                			Self at Andora Mortgage Group
+                		</h3>
+                		<div class="date">
+                			<span class="startDate">
+                				2005-01
+                			</span>
+                			<span class="endDate">
+                				- 2006-04
+                			</span>
+                		</div>
+                		<div class="position">
+                			Loan Officer
+                		</div>
+                		<div class="summary">
+                			<p>Self employed 100% commission loan officer.</p>
+                		</div>
+                		<ul class="highlights">
+                			<li>Acquired leads through online lead sources at own expense.</li>
+                			<li>Marketed and networked with realtors and other sources.</li>
+                		</ul>
+                	</div>
+                	<div class="item">
+                		<h3 class="name">
+                			Oak Street Mortgage
+                		</h3>
+                		<div class="date">
+                			<span class="startDate">
+                				2004-10
+                			</span>
+                			<span class="endDate">
+                				- 2005-12
+                			</span>
+                		</div>
+                		<div class="position">
+                			Mortgage Loan Officer
+                		</div>
+                		<div class="summary">
+                			<p>Licensed mortgage loan Officer.</p>
+                		</div>
+                		<ul class="highlights">
+                			<li>Opened a branch for this company along with manager and teammates from previous mortgage company.</li>
+                		</ul>
+                	</div>
+                	<div class="item">
+                		<h3 class="name">
+                			Axiom Financial Services
+                		</h3>
+                		<div class="date">
+                			<span class="startDate">
+                				2003-06
+                			</span>
+                			<span class="endDate">
+                				- 2004-10
+                			</span>
+                		</div>
+                		<div class="position">
+                			Mortgage Loan Officer
+                		</div>
+                		<div class="summary">
+                			<p>Licensed Mortgage Loan Officer.</p>
+                		</div>
+                		<ul class="highlights">
+                			<li>We took over this branch as a team after previous team left.</li>
+                		</ul>
+                	</div>
+                	<div class="item">
+                		<h3 class="name">
+                			Conseco Financial Services
+                		</h3>
+                		<div class="date">
+                			<span class="startDate">
+                				2002-07
+                			</span>
+                			<span class="endDate">
+                				- 2003-04
+                			</span>
+                		</div>
+                		<div class="position">
+                			Mortgage Loan Officer
+                		</div>
+                		<div class="summary">
+                			<p>Licensed Mortgage Loan Officer.</p>
+                		</div>
+                		<ul class="highlights">
+                			<li>Mortgage refinance sales and customer service</li>
+                			<li>Conseco became the 3rd largest bankruptcy at the time behind Enron and Worldcom</li>
+                		</ul>
+                	</div>
+                	<div class="item">
+                		<h3 class="name">
+                			Aim Mutual Funds
+                		</h3>
+                		<div class="date">
+                			<span class="startDate">
+                				1999-10
+                			</span>
+                			<span class="endDate">
+                				- 2002-05
+                			</span>
+                		</div>
+                		<div class="position">
+                			Rep 5 / Associate Development Specialist
+                		</div>
+                		<div class="summary">
+                			<p>Top level customer service and processing of accounts.</p>
+                		</div>
+                		<ul class="highlights">
+                			<li>Associate Development Specialist role - All new people would sit with us for a few weeks for mentoring and orientation after training, and we would provide an assessment to their future supervisors of their strengths.</li>
+                			<li>Participated in many teams on update of the transfer agency system.</li>
+                		</ul>
+                	</div>
+                </section>
+                <section id="projects">
+                	<h2><i class="fa-solid fa-flask"></i> Projects</h2>
+                	<div class="item">
+                		<h3 class="name">
+                			Portfolio Website
+                		</h3>
+                		<div class="date">
+                			<span class="startDate">
+                				2022-08
+                			</span>
+                			<span class="endDate">
+                				- 2022-11
+                			</span>
+                		</div>
+                		<div class="url">
+                			<a href="https://stuartlwilson.dev">https://stuartlwilson.dev</a>
+                		</div>
+                		<div class="description">
+                			<p>A portfolio website in Rails 7 on Heroku using Bootstrap</p>
+                		</div>
+                		<ul class="highlights">
+                			<li>Showcases other projects created.</li>
+                			<li>Using modern technologies such as Rails  7, Stimulus, ActiveStorage direct upload, Amazon S3 storage</li>
+                		</ul>
+                		    <ul class="keywords">
+                			          <li>Rails 7</li>
+                			          <li>Stimulus</li>
+                			          <li>Bootstrap</li>
+                		    </ul>
+                	</div>
+                </section>
+                <section id="references">
+                	<h2>References</h2>
+                	<div class="item">
+                		<blockquote class="reference">
+                			References available upon request.
+                		</blockquote>
+                	</div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
